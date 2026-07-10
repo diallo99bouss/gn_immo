@@ -21,7 +21,7 @@ import { LegalPage } from "./pages/LegalPage";
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <Box minHeight="100vh" display="flex" flexDirection="column">
         <Navigation />
         <Box component="main" flex={1}>

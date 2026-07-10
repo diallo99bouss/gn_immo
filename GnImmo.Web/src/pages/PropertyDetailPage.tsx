@@ -7,7 +7,6 @@ import {
   CardContent,
   Chip,
   Container,
-  Divider,
   Grid,
   Stack,
   Tab,
@@ -85,7 +84,7 @@ const mockProperty = {
 };
 
 export function PropertyDetailPage() {
-  const { id } = useParams();
+  useParams();
   const { t, i18n } = useTranslation();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isFavorite, setIsFavorite] = useState(false);
