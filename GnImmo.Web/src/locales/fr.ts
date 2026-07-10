@@ -7,6 +7,8 @@ const fr = {
     contact: "Contact",
     login: "Connexion",
     register: "S'inscrire",
+    language: "Changer de langue",
+    menu: "Menu",
   },
   home: {
     heroTitle1: "Trouvez un logement verifie,",
