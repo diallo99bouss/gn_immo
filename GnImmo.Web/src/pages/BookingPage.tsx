@@ -20,7 +20,6 @@ import {
   FormControlLabel,
 } from "@mui/material";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
-import HomeWorkIcon from "@mui/icons-material/HomeWork";
 import PersonIcon from "@mui/icons-material/Person";
 import CreditCardIcon from "@mui/icons-material/CreditCard";
 import ShieldIcon from "@mui/icons-material/Shield";
@@ -459,7 +458,7 @@ export function BookingPage() {
                             {t("booking.durationSummary")}
                           </Typography>
                           <Typography variant="body2" fontWeight={600}>
-                            {t("booking.durationMonths", { count: formData.duration })}
+                            {t("booking.durationMonths", { count: parseInt(formData.duration) })}
                           </Typography>
                         </Stack>
                       )}
@@ -478,7 +477,7 @@ export function BookingPage() {
                     {formData.duration && parseInt(formData.duration) > 1 && (
                       <Stack direction="row" justifyContent="space-between">
                         <Typography variant="body2" color="text.secondary">
-                          {t("booking.multipleMonths", { count: formData.duration })}
+                          {t("booking.multipleMonths", { count: parseInt(formData.duration) })}
                         </Typography>
                         <Typography variant="body2">
                           {(property.price * parseInt(formData.duration)).toLocaleString(locale)} GNF
